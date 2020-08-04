@@ -1,0 +1,67 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				flex-direction: column;
+				min-height: 100vh;
+				align-items: center;
+			}
+			input,
+			button {
+				min-width: 300px;
+				padding: 1%;
+				margin: 1%;
+			}
+			button {
+				color: black;
+				background-color: #f6f6f6;
+				border: solid 1px black;
+				transition: ease-in-out 0.3s;
+			}
+			button:hover {
+				color: #f6f6f6;
+				background-color: black;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<label for="email">Email</label>
+		<input id="email" type="email" class="email" />
+		<button type="submit" class="submit">Sign Up</button>
+
+		<script src="index.js"></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: "AIzaSyDs2DwGVyrB4fY9TXyzllHNkB4YtzmKKsU",
+				authDomain: "email-verification-1b685.firebaseapp.com",
+				databaseURL: "https://email-verification-1b685.firebaseio.com",
+				projectId: "email-verification-1b685",
+				storageBucket: "email-verification-1b685.appspot.com",
+				messagingSenderId: "114873057625",
+				appId: "1:114873057625:web:82a680ed2c9e4e4d61cc48",
+				measurementId: "G-JT9LKY7H8N",
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+		</script>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+
+		<script></script>
+	</body>
+</html>
